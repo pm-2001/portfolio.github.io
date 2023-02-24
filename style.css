@@ -15,7 +15,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(/images/background2.png);
+    background-image: url(images/background2.png);
     background-size: cover;
     background-position: center;
 }
@@ -70,6 +70,9 @@ nav ul li a:hover::after{
     margin-top: 20px;
     font-size: 60px;
 }
+.header-text p span {
+    color: #ff004f;
+}
 .header-text h1 span {
     color: #ff004f;
 }
@@ -94,10 +97,12 @@ nav ul li a:hover::after{
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
+    /* margin-left: 80px; */
 }
 
 .about-col-2{
     flex-basis: 60%;
+    margin-left: 10px;
 }
 
 .sub-title{
@@ -142,7 +147,8 @@ nav ul li a:hover::after{
 
 .tab-contents ul li span{
     color: #b54769;
-    font-size: 14px;
+    font-size: 18px;
+    /* margin-bottom: 100px; */
 }
 
 .tab-contents{
@@ -180,9 +186,13 @@ nav ul li a:hover::after{
 }
 
 .services-list div h2{
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 500;
     margin-bottom: 15px;
+
+}
+.services-list div p{
+    font-size: 15px;
 
 }
 
@@ -246,9 +256,13 @@ nav ul li a:hover::after{
     transition: height 0.5s;
 }
 
-.layer h3{
-    font-weight: 500;
-    margin-bottom: 20px;
+.layer h2{
+    font-weight: 7x00;
+    margin-bottom: 70px;
+
+}
+.layer p{
+    display: none;
 
 }
 
@@ -262,6 +276,15 @@ nav ul li a:hover::after{
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    display: none;
+}
+
+.work:hover .layer p{
+    display: contents;
+}
+.work:hover .layer a{
+    display: block;
+    
 }
 
 .work:hover .layer{
