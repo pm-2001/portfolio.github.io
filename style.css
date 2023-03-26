@@ -307,7 +307,8 @@ nav ul li a:hover::after{
     background: #ff004f;
 }
 
-/* ---------comment--------- */
+/* ---------contact--------- */
+
 .contact-left{
     flex-basis: 35%;
 }
@@ -371,6 +372,25 @@ form .btn2{
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
+}
+
+.loader{
+    pointer-events: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #fff;
+    animation: an1 1s ease infinite;
+}
+
+@keyframes an1{
+    0%{
+        transform: rotate(0turn);
+    }
+    100%{
+        transform: rotate(1turn);
+    }
 }
 
 
